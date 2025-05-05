@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Base</title>
+
+  <link href="theme/frontend/css/fontawesome-free-6.2.0-web/css/all.css" type="text/css" rel="stylesheet" />
+
+  <link href="theme/frontend/css/animate.min.css" type="text/css" rel="stylesheet" />
+
+  <link href="theme/frontend/css/swiper-bundle.min.css" type="text/css" rel="stylesheet" />
+
+  <link href="theme/frontend/css/lightbox.css" type="text/css" rel="stylesheet" />
+
+  <link href="./output.css" type="text/css" rel="stylesheet" />
+
+  <link href="theme/frontend/css/main.css" type="text/css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+
+          fontFamily: {
+
+            'Manrope': ['"Manrope"'],
+
+            'Poppins':['"Poppins"'],
+
+
+          },
+
+          screens: {
+
+          
+        "sm": "576px",
+
+        "md": "768px",
+
+        "lg": "1024px",
+
+        "xl": "1280px",
+
+        "2xl": "1534px",
+
+          },
+
+          container: {
+
+            center: true,
+
+          },
+
+
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="wrapper mx-auto 2xl:text-[16px] text-[14px] text-[#454545] leading-snug font-['Manrope',sans-serif] overflow-x-hidden bg-[#2A2A2A]">
+
+  <header class="header sticky top-0 left-0 w-full z-10 lg:fixed bg-[rgba(42,42,42,.77)] 2xl:py-5 py-3">
+    <div class="container flex items-center justify-between lg:justify-start">
+      <a href="#" title="" class="h-logo block max-w-[11rem] sm:max-w-[13.563rem]">
+        <img src="theme/frontend/images/logo-header.png" alt="">
+      </a>
+      <nav class="menu lg:flex-1 2xl:pr-14 lg:pl-4 lg:pr-10">
+        <a href="#" title="" class="logo-mobile block max-w-[13.563rem] mx-auto my-4 lg:hidden">
+          <img src="theme/frontend/images/logo-header.png" alt="">
+        </a>
+        <ul>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="">About</a>
+            <ul>
+              <li><a href="">Menu1</a></li>
+              <li><a href="">Menu1</a></li>
+
+            </ul>
+          </li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Testimonials</a></li>
+          <li><a href="">Projects/Portfolio</a></li>
+        </ul>
+      </nav>
+      <div class="over-lay block lg:hidden fixed top-0 right-[-100%] bg-[rgba(0,0,0,.7)] transition-all duration-500 w-full h-full"></div>
+      <button class="show-menu text-[20px] text-white lg:hidden block">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a href="#" title="Contact Us" class="btn btn-primary !hidden lg:!inline-flex">Contact Us</a>
+    </div>
+  </header>
+  <section class="section-banner-page py-20 lg:pt-[17.625rem] bg-no-repeat bg-cover" style="background-image: url(theme/frontend/images/bg-about.jpg);">
+    <div class="container">
+        <div class="content lg:w-1/2 ml-auto mr-0">
+            <h1 class="title font-semibold text-white 2xl:text-[5rem] lg:text-[3.5rem] text-[2.5rem]">About Us</h1>
+            <p class="desc text-white 2xl:text-[1.5rem] lg:mt-[1.875rem] mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+  </section>
+  <section class="section-about-pages relative py-6 2xl:py-[7.5rem] lg:py-[5rem]">
+    <div class="container"> 
+      <div class="flex flex-wrap 2xl:-mx-9 lg:-mx-4 -mx-2">
+        <div class="w-full lg:w-1/2 2xl:px-9 lg:px-4 px-2 wow fadeInLeft">
+          <p class="subtitle font-semibold text-[#00CCFF] 2xl:text-[1.875rem] lg:text-[1.5rem] text-[1rem]">Who are we?</p>
+          <h2 class="title text-white font-semibold mt-5 2xl:text-[3.5rem] lg:text-[2.5rem] text-[1.875rem]">Empowering <br> Businesses with <br> Cloud-First Solutions</h2>
+        </div>
+        <div class="w-full lg:w-1/2 2xl:px-9 lg:px-4 px-2 mt-4 lg:mt-0 wow fadeInRight">
+            <div class="short_content text-[rgba(255,255,255,.8)] font-semibold 2xl:text-[1.5rem]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </div>
+        </div>
+      </div>
+    </div>
+    <span class="hidden lg:inline-block absolute top-0 right-0">
+      <img src="theme/frontend/images/circle_tr.png" alt="">
+    </span>
+  </section>
+  <section class="section-partner relative lg:py-10 py-6">
+    <div class="swiper slide-partner">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-feedback-about 2xl:py-[7.5rem] lg:py-[5rem] py-6 bg-[#111]">
+    <div class="container">
+      <p class="subtitle font-semibold text-[#00CCFF] 2xl:text-[1.875rem] lg:text-[1.5rem] text-[1rem] wow fadeInUp">Testimonial</p>
+      <div class="head flex items-center justify-between mt-5 wow fadeInUp">
+        <h2 class="title text-white font-semibold 2xl:text-[3.5rem] lg:text-[2.5rem] text-[1.875rem]">Client’s Feedback</h2>
+        <a href="#" title="View All" class="btn btn-primary">View All</a>
+      </div>
+      <div class="box-slide-feedback relative lg:bg-[#252525] 2xl:p-[7.5rem] lg:p-10 lg:shadow-[10px_14px_40px_0_rgba(255,255,255,.08)] 2xl:mt-[7.25rem] lg:mt-20 mt-8">
+        <div class="swiper slide-feedback 2xl:mr-[7.5rem] lg:mr-10">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide-feedback-item flex flex-wrap items-center">
+                <div class="w-full lg:w-1/2">
+                  <div class="feedback-content relative bg-[#4d4d4d] lg:pt-20 lg:pb-8 lg:pl-[4.625rem] lg:pr-8 p-4 lg:-mr-14 z-[1]">
+                    <span class="icon hidden lg:inline-block max-w-[5.938rem] absolute left-10 top-0 -translate-y-1/2">
+                      <img src="theme/frontend/images/quote-blue.png" alt="">
+                    </span>
+                      <div class="c-img pt-[70%] img-mo block lg:hidden mb-4 lg:mb-0">
+                        <img src="theme/frontend/images/img-feedback.jpg" alt="">
+                      </div>
+                    <div class="content 2xl:text-[1.5rem] text-white lg:max-w-[80%]">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                    </div>
+                    <p class="name text-right font-medium 2xl:text-[1.5rem] text-white 2xl:mt-14 lg:mt-10 mt-4">
+                      <span class="underline">Martha M </span>, NYE
+                    </p>
+                  </div>
+                </div>
+                <div class="w-1/2 hidden lg:block">
+                  <div class="image c-img pt-[115%]">
+                    <img src="theme/frontend/images/img-feedback.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-feedback-item flex flex-wrap items-center">
+                <div class="w-full lg:w-1/2">
+                  <div class="feedback-content relative bg-[#4d4d4d] lg:pt-20 lg:pb-8 lg:pl-[4.625rem] lg:pr-8 p-4 lg:-mr-14 z-[1]">
+                    <span class="icon hidden lg:inline-block max-w-[5.938rem] absolute left-10 top-0 -translate-y-1/2">
+                      <img src="theme/frontend/images/quote-blue.png" alt="">
+                    </span>
+                      <div class="c-img pt-[70%] img-mo block lg:hidden mb-4 lg:mb-0">
+                        <img src="theme/frontend/images/img-feedback.jpg" alt="">
+                      </div>
+                    <div class="content 2xl:text-[1.5rem] text-white lg:max-w-[80%]">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                    </div>
+                    <p class="name text-right font-medium 2xl:text-[1.5rem] text-white 2xl:mt-14 lg:mt-10 mt-4">
+                      <span class="underline">Martha M </span>, NYE
+                    </p>
+                  </div>
+                </div>
+                <div class="w-1/2 hidden lg:block">
+                  <div class="image c-img pt-[115%]">
+                    <img src="theme/frontend/images/img-feedback.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-feedback-item flex flex-wrap items-center">
+                <div class="w-full lg:w-1/2">
+                  <div class="feedback-content relative bg-[#4d4d4d] lg:pt-20 lg:pb-8 lg:pl-[4.625rem] lg:pr-8 p-4 lg:-mr-14 z-[1]">
+                    <span class="icon hidden lg:inline-block max-w-[5.938rem] absolute left-10 top-0 -translate-y-1/2">
+                      <img src="theme/frontend/images/quote-blue.png" alt="">
+                    </span>
+                      <div class="c-img pt-[70%] img-mo block lg:hidden mb-4 lg:mb-0">
+                        <img src="theme/frontend/images/img-feedback.jpg" alt="">
+                      </div>
+                    <div class="content 2xl:text-[1.5rem] text-white lg:max-w-[80%]">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                    </div>
+                    <p class="name text-right font-medium 2xl:text-[1.5rem] text-white 2xl:mt-14 lg:mt-10 mt-4">
+                      <span class="underline">Martha M </span>, NYE
+                    </p>
+                  </div>
+                </div>
+                <div class="w-1/2 hidden lg:block">
+                  <div class="image c-img pt-[115%]">
+                    <img src="theme/frontend/images/img-feedback.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col lg:absolute relative justify-between items-center button-list-control 2xl:right-[7.5rem] lg:right-5 mt-4 lg:mt-0">
+          <button class="button-feedback button-feedback-prev hidden lg:block">
+            <img src="theme/frontend/images/arrow.png" alt="">
+          </button>
+          <div class="pagination-feedback"></div>
+          <button class="button-feedback button-feedback-next hidden lg:block">
+            <img src="theme/frontend/images/arrow.png" alt="">
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-contact-form relative 2xl:py-[11.875rem] lg:py-[9rem] py-20 bg-no-repeat bg-cover" style="background-image: url(theme/frontend/images/bg-contact.jpg);">
+    <div class="container">
+      <div class="flex flex-wrap -mx-2">
+        <div class="w-full lg:w-1/2 px-2 wow fadeInLeft">
+          <p class="subtitle font-semibold text-[#00CCFF] 2xl:text-[1.875rem] lg:text-[1.5rem] text-[1rem]">About Us</p>
+          <h2 class="title text-white font-semibold mt-5 2xl:text-[3.5rem] lg:text-[2.5rem] text-[1.875rem]">Have a Question? We've Got Answers</h2>
+        </div>
+        <div class="w-full lg:w-1/2 px-2 lg:pl-16 wow fadeInRight">
+          <div class="short_content text-white font-medium 2xl:text-[1.5rem]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, reiciendis totam ratione, aliquam accusamus voluptates provident quia fuga, necessitatibus adipisci neque. Esse minima ea laborum sint libero perspiciatis sunt ad.
+          </div>
+          <a href="#" title="Contact Us" class="btn btn-primary lg:mt-20 mt-8">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <span class="hidden lg:inline-block absolute bottom-0 right-0">
+      <img src="theme/frontend/images/circle_br.png" alt="">
+    </span>
+  </section>
+  <footer class="footer relative">
+    <span class="hidden lg:inline-block absolute top-0 right-0">
+      <img src="theme/frontend/images/circle_tr.png" alt="">
+    </span>
+    <div class="footer-main 2xl:pt-[4.625rem] 2xl:pb-[6.063rem] lg:py-10 py-8 bg-[#2A2A2A]">
+      <div class="container">
+        <div class="flex flex-wrap 2xl:-mx-9 lg:-mx-4 -mx-2">
+          <div class="lg:w-[60%] 2xl:px-9 lg:px-4 px-2">
+            <div class="lg:flex flex-wrap">
+              <a href="#" title="" class="logo-footer block max-w-[13.563rem] shrink-0 mx-auto lg:ml-0">
+                <img src="theme/frontend/images/logo-footer.png" alt="">
+              </a>
+              <p class="footer-desc flex-1 lg:ml-6 text-white opacity-80 font-medium 2xl:text-[25px] text-center lg:text-left mt-4 lg:mt-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+              </p>
+            </div>
+            <div class="quicklink 2xl:mt-10 sm:mt-8 mt-4 hidden sm:block">
+              <p class="title-footer text-white f-pop font-medium 2xl-[text-1.875rem] lg:text-[1.5rem] text-[1.25rem]">Quicklinks</p>
+              <nav class="menu-quicklink mt-8">
+                <ul>
+                  <li><a href="" class="active">Home</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">Testimonials</a></li>
+                  <li><a href="">Projects/Portfolio</a></li>
+                </ul>
+              </nav>
+              <form action="" method="" class="form-footer mt-8 flex">
+                <input type="text" name="" placeholder="Enter Your E-mail Address" class="form-control f-pop font-medium bg-transparent flex-1 py-3 px-6 rounded-xl border border-[rgba(210,210,210,.8)] text-[rgba(210,210,210,.8)]">
+                <button class="btn-submit font-medium 2xl:text-[1.375rem] py-3 px-6 rounded-xl border border-[rgba(210,210,210,.8)] text-[rgba(210,210,210,.8)] ml-2 shrink-0 lg:hover:bg-[#00ccff] lg:hover:text-white lg:hover:border-[#00ccff] sm:min-w-[11.25rem]">Send</button>
+              </form>
+            </div>
+          </div>
+          <div class="w-full sm:w-1/2 mt-4 lg:w-[20%] 2xl:px-9 lg:px-4 px-2">
+            <p class="title-footer text-white f-pop font-medium 2xl-[text-1.875rem] lg:text-[1.5rem] text-[1.25rem]">Terms of Service</p>
+            <nav class="menu-foorer mt-4">
+              <ul>
+                <li><a href="">Lorem ipsum</a></li>
+                <li><a href="">Lorem ipsum</a></li>
+                <li><a href="">Lorem ipsum</a></li>
+                <li><a href="">Lorem ipsum</a></li>
+                <li><a href="">Lorem ipsum</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="w-full sm:w-1/2 mt-4 lg:w-[20%] 2xl:px-9 lg:px-4 px-2">
+            <p class="title-footer text-white f-pop font-medium 2xl-[text-1.875rem] lg:text-[1.5rem] text-[1.25rem]">Contact Us</p>
+            <p class="footer-contact flex items-center mt-4">
+              <img src="theme/frontend/images/hotline.svg" class="shrink-0 mr-4" alt="">
+              <a href="tel:19005678" class="hotline text-[rgba(255,255,255,.8)] font-meidum 2xl:text-[1.25rem]">19005678</a>
+            </p>
+            <p class="footer-contact flex items-center mt-4">
+              <img src="theme/frontend/images/ico_email.png" class="shrink-0 mr-4" alt="">
+              <a href="mailto:info@gmail.com" class="hotline text-[rgba(255,255,255,.8)] font-meidum 2xl:text-[1.25rem]">info@gmail.com</a>
+            </p>
+            <ul class="list-social flex items-center lg:mt-10 mt-4">
+              <li class="mr-5 last:mr-0">
+                <a href="" title="Facebook" target="_blank" class="text-[1.25rem] text-white"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li class="mr-5 last:mr-0">
+                <a href="" title="Instagram" target="_blank" class="text-[1.25rem] text-white"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li class="mr-5 last:mr-0">
+                <a href="" title="Linkedin-in" target="_blank" class="text-[1.25rem] text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright bg-[#009DC5] lg:py-5 py-2">
+      <div class="container text-center font-medium 2xl:text-[1.25rem] text-white">2023 © Connectel Internet Voice Networks</div>
+    </div>
+  </footer>
+
+  <script src="theme/frontend/tech5s_js/tech5s_base.min.js" defer></script>
+
+  <script src="theme/frontend/tech5s_js/libraries/Tech.js" defer></script>
+
+  <script src="theme/frontend/tech5s_js/libraries/BackToTop.js" defer></script>
+
+  <script src="theme/frontend/js/wow.min.js" defer></script>
+
+  <script src="theme/frontend/js/fslightbox.js" defer></script>
+
+  <script src="theme/frontend/js/swiper-bundle.min.js" defer></script>
+
+
+  <script src="theme/frontend/js/slider.js" defer></script>
+
+  <script src="theme/frontend/js/script.js" defer></script>
+
+</body>
+
+
+
+</html>

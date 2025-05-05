@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Base</title>
+
+  <link href="theme/frontend/css/fontawesome-free-6.2.0-web/css/all.css" type="text/css" rel="stylesheet" />
+
+  <link href="theme/frontend/css/animate.min.css" type="text/css" rel="stylesheet" />
+
+  <link href="theme/frontend/css/swiper-bundle.min.css" type="text/css" rel="stylesheet" />
+
+  <link href="theme/frontend/css/lightbox.css" type="text/css" rel="stylesheet" />
+
+  <link href="./output.css" type="text/css" rel="stylesheet" />
+
+  <link href="theme/frontend/css/main.css" type="text/css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+
+          fontFamily: {
+
+            'Manrope': ['"Manrope"'],
+
+            'Poppins':['"Poppins"'],
+
+
+          },
+
+          screens: {
+
+          
+        "sm": "576px",
+
+        "md": "768px",
+
+        "lg": "1024px",
+
+        "xl": "1280px",
+
+        "2xl": "1534px",
+
+          },
+
+          container: {
+
+            center: true,
+
+          },
+
+
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="wrapper mx-auto 2xl:text-[16px] text-[14px] text-[#454545] leading-snug font-['Manrope',sans-serif] overflow-x-hidden bg-[#2A2A2A]">
+
+  <header class="header sticky top-0 left-0 w-full z-10 lg:fixed bg-[rgba(42,42,42,.77)] 2xl:py-5 py-3">
+    <div class="container flex items-center justify-between lg:justify-start">
+      <a href="#" title="" class="h-logo block max-w-[11rem] sm:max-w-[13.563rem]">
+        <img src="theme/frontend/images/logo-header.png" alt="">
+      </a>
+      <nav class="menu lg:flex-1 2xl:pr-14 lg:pl-4 lg:pr-10">
+        <a href="#" title="" class="logo-mobile block max-w-[13.563rem] mx-auto my-4 lg:hidden">
+          <img src="theme/frontend/images/logo-header.png" alt="">
+        </a>
+        <ul>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="">About</a>
+            <ul>
+              <li><a href="">Menu1</a></li>
+              <li><a href="">Menu1</a></li>
+
+            </ul>
+          </li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Testimonials</a></li>
+          <li><a href="">Projects/Portfolio</a></li>
+        </ul>
+      </nav>
+      <div class="over-lay block lg:hidden fixed top-0 right-[-100%] bg-[rgba(0,0,0,.7)] transition-all duration-500 w-full h-full"></div>
+      <button class="show-menu text-[20px] text-white lg:hidden block">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a href="#" title="Contact Us" class="btn btn-primary !hidden lg:!inline-flex">Contact Us</a>
+    </div>
+  </header>
+  <section class="section-banner-home relative 2xl:pb-[8.125rem] 2xl:pt-[14.625rem] lg:pt-[10rem] lg:pb-[6rem] py-6 bg-no-repeat bg-cover" style="background-image: url(theme/frontend/images/bg-banner.jpg);">
+    <div class="container">
+      <div class="banner-content lg:w-[60%] mr-0 ml-auto">
+        <h2 class="title-banner font-semibold text-white 2xl:text-[5rem] lg:text-[3rem] text-[2.5rem] wow fadeInLeft">Northwest Arkansas based technology</h2>
+        <div class="short_content text-white 2xl;text-[1.5rem] lg:mt-[1.875rem] mt-4 lg:max-w-[49.375rem] wow fadeInRight" data-wow-delay=".2s">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        <div class="flex flex-wrap 2xl:mt-16 lg:mt-10 mt-8 wow fadeInUp" data-wow-delay=".4s">
+          <a href="#" title="Contact Us" class="btn btn-primary">Contact Us</a>
+          <a href="#" title="Our Services" class="btn btn-secondary ml-5">Our Services</a>
+        </div>
+      </div>
+    </div>
+    <span class="hidden lg:inline-block absolute bottom-0 right-0">
+      <img src="theme/frontend/images/circle_br.png" alt="">
+    </span>
+  </section>
+  <section class="section-about-home relative py-6 2xl:pt-[7.5rem] lg:pt-[5rem]">
+    <div class="container"> 
+      <div class="flex flex-wrap 2xl:-mx-9 lg:-mx-4 -mx-2">
+        <div class="w-full lg:w-1/2 2xl:px-9 lg:px-4 px-2 wow fadeInLeft">
+          <p class="subtitle font-semibold text-[#00CCFF] 2xl:text-[1.875rem] lg:text-[1.5rem] text-[1rem]">About Us</p>
+          <h2 class="title text-white font-semibold mt-5 2xl:text-[3.5rem] lg:text-[2.5rem] text-[1.875rem]">Connecting Your Business</h2>
+          <div class="short_content text-[rgba(255,255,255,.8)] font-semibold 2xl:text-[1.5rem] lg:mt-[1.875rem] mt-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </div>
+          <a href="#" title="Read More" class="btn btn-primary lg:mt-[1.875rem] mt-5">Read More</a>
+        </div>
+        <div class="w-full lg:w-1/2 2xl:px-9 lg:px-4 px-2 mt-4 lg:mt-0 wow fadeInRight">
+          <div class="image img_full">
+            <img src="theme/frontend/images/img-about.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="hidden lg:inline-block absolute top-0 right-0">
+      <img src="theme/frontend/images/circle_tr.png" alt="">
+    </span>
+  </section>
+  <section class="section-statis lg:py-10 py-6">
+    <div class="container">
+      <div class="flex flex-wrap 2xl:-mx-4 -mx-2">
+        <div class="w-full lg:w-[70%] 2xl:px-4 px-2 wow fadeInLeft">
+          <div class="image c-img pt-[60%]">
+            <img src="theme/frontend/images/img-statis.jpg" alt="">
+          </div>
+        </div>
+        <div class="w-full lg:w-[30%] 2xl:px-4 px-4">
+          <ul class="statis-list flex flex-col justify-between h-full">
+            <li class="statis-item text-center mt-4 lg:mt-0 xl:p-[1.875rem] p-4 text-white bg-[#000] wow fadeInRight" data-wow-delay=".2s">
+              <p class="count font-semibold 2xl:text-[3.125rem] lg:text-[2.5rem] text-[1.875rem]" tech5s-number="1000+">1000+</p>
+              <p class="text 2xl:text-[2.25rem] lg:text-[1.875rem] text-[1.25rem]">Client Reviews</p>
+            </li>
+            <li class="statis-item text-center mt-4 lg:mt-0 xl:p-[1.875rem] p-4 text-white bg-[#000] wow fadeInRight" data-wow-delay=".3s">
+              <p class="count font-semibold 2xl:text-[3.125rem] lg:text-[2.5rem] text-[1.875rem]" tech5s-number="1000+">1000+</p>
+              <p class="text 2xl:text-[2.25rem] lg:text-[1.875rem] text-[1.25rem]">Client Reviews</p>
+            </li>
+            <li class="statis-item text-center mt-4 lg:mt-0 xl:p-[1.875rem] p-4 text-white bg-[#000] wow fadeInRight" data-wow-delay=".4s">
+              <p class="count font-semibold 2xl:text-[3.125rem] lg:text-[2.5rem] text-[1.875rem]" tech5s-number="1000+">1000+</p>
+              <p class="text 2xl:text-[2.25rem] lg:text-[1.875rem] text-[1.25rem]">Client Reviews</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-partner relative lg:py-10 py-6">
+    <div class="swiper slide-partner">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="marquee-item">
+            <a href="#" title="" class="partner-item c-img pt-[60%] img-contain">
+              <img src="theme/frontend/images/altiss.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-content relative 2xl:py-[7.5rem] lg:py-[5rem] py-6 bg-none bg-cover" style="background-image: url(theme/frontend/images/bg-content-service.jpg);">
+    <div class="container">
+      <div class="s-content f-pop font-semibold text-white 2xl:text-[2.75rem] lg:text-[2rem] text-[1.5rem] text-center wow fadeInUp">
+        Using Trending Technologies We Develop The Best NWACLOUD Based Application With Our Best Experts That Will Help You And Make Your Business Easier
+      </div>
+    </div>
+    <span class="hidden lg:inline-block absolute bottom-0 left-0">
+      <img src="theme/frontend/images/circle_bl.png" alt="">
+    </span>
+  </section>
+  <section class="section-service-home relative 2xl:py-[7.5rem] lg:py-20 py-6">
+    <div class="container">
+      <div class="flex flex-wrap 2xl:-mx-4 -mx-2">
+        <div class="w-full sm:w-1/2 lg:w-1/3 2xl:px-4 px-4 2xl:mt-8 mt-4 wow fadeInUp" data-wow-delay=".05s">
+          <div class="item-service relative bg-[#000] 2xl:py-6 2xl:px-8 p-4 h-full transition-all duration-300 lg:hover:shadow-[0px_4px_10px_rgba(0,204,255,.3)]">
+            <h3>
+              <a href="#" title="" class="title f-pop font-medium 2xl:text-[1.875rem] lg:text-[1.5rem] text-[1.25rem] text-white">What is Cloud Hosted VoIP Phone Service?</a>
+            </h3>
+            <p class="desc font-medium 2xl:text-[1.5rem] text-[rgba(255,255,255,.8)] lg:mt-5 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <a href="#" title="Read More" class="read-more inline-block f-pop text-[#00CCFF] 2xl:text-[1.5rem] 2xl:mt-[1.875rem] mt-[1.5rem] underline">Read More</a>
+            <a href="#" title="Read More" class="btn-more absolute bottom-2 right-2 inline-flex w-[2.813rem] h-[2.813rem] items-center justify-center bg-[#2A2A2A] text-white lg:hover:bg-[#00CCFF] hover:text-white">
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 lg:w-1/3 2xl:px-4 px-4 2xl:mt-8 mt-4 wow fadeInUp" data-wow-delay=".1s">
+          <div class="item-service relative bg-[#000] 2xl:py-6 2xl:px-8 p-4 h-full transition-all duration-300 lg:hover:shadow-[0px_4px_10px_rgba(0,204,255,.3)]">
+            <h3>
+              <a href="#" title="" class="title f-pop font-medium 2xl:text-[1.875rem] lg:text-[1.5rem] text-[1.25rem] text-white">What is Cloud Hosted VoIP Phone Service?</a>
+            </h3>
+            <p class="desc font-medium 2xl:text-[1.5rem] text-[rgba(255,255,255,.8)] lg:mt-5 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <a href="#" title="Read More" class="read-more inline-block f-pop text-[#00CCFF] 2xl:text-[1.5rem] 2xl:mt-[1.875rem] mt-[1.5rem] underline">Read More</a>
+            <a href="#" title="Read More" class="btn-more absolute bottom-2 right-2 inline-flex w-[2.813rem] h-[2.813rem] items-center justify-center bg-[#2A2A2A] text-white lg:hover:bg-[#00CCFF] hover:text-white">
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 lg:w-1/3 2xl:px-4 px-4 2xl:mt-8 mt-4 wow fadeInUp" data-wow-delay=".15s">
+          <div class="item-service relative bg-[#000] 2xl:py-6 2xl:px-8 p-4 h-full transition-all duration-300 lg:hover:shadow-[0px_4px_10px_rgba(0,204,255,.3)]">
+            <h3>
+              <a href="#" title="" class="title f-pop font-medium 2xl:text-[1.875rem] lg:text-[1.5rem] text-[1.25rem] text-white">What is Cloud Hosted VoIP Phone Service?</a>
+            </h3>
+            <p class="desc font-medium 2xl:text-[1.5rem] text-[rgba(255,255,255,.8)] lg:mt-5 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <a href="#" title="Read More" class="read-more inline-block f-pop text-[#00CCFF] 2xl:text-[1.5rem] 2xl:mt-[1.875rem] mt-[1.5rem] underline">Read More</a>
+            <a href="#" title="Read More" class="btn-more absolute bottom-2 right-2 inline-flex w-[2.813rem] h-[2.813rem] items-center justify-center bg-[#2A2A2A] text-white lg:hover:bg-[#00CCFF] hover:text-white">
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 lg:w-1/3 2xl:px-4 px-4 2xl:mt-8 mt-4 wow fadeInUp" data-wow-delay=".2s">
+          <div class="item-service relative bg-[#000] 2xl:py-6 2xl:px-8 p-4 h-full transition-all duration-300 lg:hover:shadow-[0px_4px_10px_rgba(0,204,255,.3)]">
+            <h3>
+              <a href="#" title="" class="title f-pop font-medium 2xl:text-[1.875rem] lg:text-[1.5rem] text-[1.25rem] text-white">What is Cloud Hosted VoIP Phone Service?</a>
+            </h3>
+            <p class="desc font-medium 2xl:text-[1.5rem] text-[rgba(255,255,255,.8)] lg:mt-5 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <a href="#" title="Read More" class="read-more inline-block f-pop text-[#00CCFF] 2xl:text-[1.5rem] 2xl:mt-[1.875rem] mt-[1.5rem] underline">Read More</a>
+            <a href="#" title="Read More" class="btn-more absolute bottom-2 right-2 inline-flex w-[2.813rem] h-[2.813rem] items-center justify-center bg-[#2A2A2A] text-white lg:hover:bg-[#00CCFF] hover:text-white">
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 lg:w-1/3 2xl:px-4 px-4 2xl:mt-8 mt-4 wow fadeInUp" data-wow-delay=".25s">
+          <div class="item-service relative bg-[#000] 2xl:py-6 2xl:px-8 p-4 h-full transition-all duration-300 lg:hover:shadow-[0px_4px_10px_rgba(0,204,255,.3)]">
+            <h3>
+              <a href="#" title="" class="title f-pop font-medium 2xl:text-[1.875rem] lg:text-[1.5rem] text-[1.25rem] text-white">What is Cloud Hosted VoIP Phone Service?</a>
+            </h3>
+            <p class="desc font-medium 2xl:text-[1.5rem] text-[rgba(255,255,255,.8)] lg:mt-5 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <a href="#" title="Read More" class="read-more inline-block f-pop text-[#00CCFF] 2xl:text-[1.5rem] 2xl:mt-[1.875rem] mt-[1.5rem] underline">Read More</a>
+            <a href="#" title="Read More" class="btn-more absolute bottom-2 right-2 inline-flex w-[2.813rem] h-[2.813rem] items-center justify-center bg-[#2A2A2A] text-white lg:hover:bg-[#00CCFF] hover:text-white">
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 lg:w-1/3 2xl:px-4 px-4 2xl:mt-8 mt-4 wow fadeInUp" data-wow-delay=".3s">
+          <div class="item-service is-last before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-[rgba(0,0,0,.5)] before:pointer-events-none relative 2xl:py-6 2xl:px-8 p-4 h-full transition-all duration-300 lg:hover:shadow-[0px_4px_10px_rgba(0,204,255,.3)] bg-no-repeat bg-cover" style="background-image: url(theme/frontend/images/bg-service.jpg);">
+            <p class="title-cate relative font-semibold text-[#00CCFF] 2xl:text-[1.875rem] lg:text-[1.5rem] text-[1.25rem]">Our Services</p>
+            <p class="desc f-pop relative font-semibold text-white 2xl:text-[2.5rem] lg:text-[1.875rem] text-[1.5rem] mt-5">Cloud Hosted VoIP Phone</p>
+            <a href="#" title="View All" class="btn btn-primary relative 2xl:mt-7 mt-5">View All</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="hidden lg:inline-block absolute top-0 left-0">
+      <img src="theme/frontend/images/circle-tl.png" alt="">
+    </span>
+  </section>
+  <section class="section-feedback 2xl:py-[7.5rem] lg:py-20 py-6 bg-no-repeat bg-cover" style="background-image: url(theme/frontend/images/bg-feedback.jpg);">
+    <div class="container">
+      <p class="subtitle font-semibold text-[#00CCFF] 2xl:text-[1.875rem] lg:text-[1.5rem] text-[1rem] wow fadeInUp">Testimonial</p>
+      <div class="head flex items-center justify-between mt-5 wow fadeInUp">
+        <h2 class="title text-white font-semibold 2xl:text-[3.5rem] lg:text-[2.5rem] text-[1.875rem]">Client’s Feedback</h2>
+        <a href="#" title="View All" class="btn btn-primary">View All</a>
+      </div>
+      <div class="module-content 2xl:mt-[4.063rem] lg:mt-[2.5rem] mt-8 flex flex-wrap -mx-2">
+        <div class="w-full lg:w-[44%] px-2 lg:pr-10 wow fadeInLeft">
+          <div class="h-full flex flex-col">
+            <div class="short_content 2xl:text-[1.5rem] text-[rgba(255,255,255,.8)]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </div>
+            <div class="item-feedback relative flex flex-col small flex-1 lg:mt[3.375rem] mt-4 bg-[#000] lg:pt-[1.875rem] lg:pb-6 lg:px-10 p-4">
+              <span class="icon inline-block absolute top-8 right-10 pointer-events-none max-w-[1.875rem]">
+                <img src="theme/frontend/images/quote.png" alt="">
+              </span>
+              <p class="title f-pop font-medium text-white 2xl:text-[1.875rem] lg:text-[1.5rem] text-[1.25rem] pr-20">
+                Lorem Ipsum Dolor
+              </p>
+              <div class="content font-medium 2xl:text-[1.5rem] text-[rgba(255,255,255,.8)] 2xl:my-10 my-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+              </div>
+              <div class="user flex items-center mt-auto">
+                <div class="avatar w-[4.313rem] h-[4.313rem] rounded-full overflow-hidden img-full img-h-full shrink-0">
+                  <img src="theme/frontend/images/avatar.png" alt="">
+                </div>
+                <div class="user-info ml-4">
+                  <p class="text text-white 2xl:text-[1.25rem]">Paul Vincent</p>
+                  <p class="text text-white 2xl:text-[1.25rem]">Massi</p>
+                </div>
+                <a href="#" title="Read More" class="read-more ml-auto f-pop 2xl:text-[1.25rem] text-[#00CCFF] underline">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full lg:w-[56%] px-2 mt-4 lg:mt-0 wow fadeInRight">
+          <div class="item-feedback relative flex flex-col big h-full lg:pt-[1.875rem] lg:pb-6 lg:px-10 p-4 bg-[rgba(42,42,42,78)]">
+            <span class="icon inline-block absolute top-8 right-10 pointer-events-none max-w-[2.75rem]">
+              <img src="theme/frontend/images/quote-big.png" alt="">
+            </span>
+            <p class="title f-pop font-medium text-white 2xl:text-[2.5rem] lg:text-[1.875rem] text-[1.5rem] pr-20">
+              Lorem Ipsum Dolor
+            </p>
+            <div class="content font-medium 2xl:text-[1.5rem] text-[rgba(255,255,255,.8)] 2xl:my-10 my-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+            <div class="user flex items-center mt-auto">
+              <div class="avatar w-[4.313rem] h-[4.313rem] rounded-full overflow-hidden img-full img-h-full shrink-0">
+                <img src="theme/frontend/images/avatar.png" alt="">
+              </div>
+              <div class="user-info ml-4">
+                <p class="text text-white 2xl:text-[1.25rem]">Paul Vincent</p>
+                <p class="text text-white 2xl:text-[1.25rem]">Massi</p>
+              </div>
+              <a href="#" title="Read More" class="read-more ml-auto f-pop 2xl:text-[1.25rem] text-[#00CCFF] underline">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-project relative 2xl:py-[7.5rem] lg:py-20 py-6">
+    <div class="container">
+      <p class="subtitle font-semibold text-[#00CCFF] 2xl:text-[1.875rem] lg:text-[1.5rem] text-[1rem] text-center">Projects / Portfolio</p>
+      <h2 class="title text-white font-semibold mt-5 2xl:text-[3.5rem] lg:text-[2.5rem] text-[1.875rem] text-center">Focusing on evolution and expertise</h2>
+      <div class="module-project 2xl:mt-[4.75rem] lg:mt-[2.5rem] mt-8">
+        <div class="head py-5 px-12 bg-[#009DC5] text-white w-fit mx-auto f-pop font-semibold text-[1.5rem] hidden lg:block wow fadeInDown">Projects / Portfolio</div>
+        <div class="project-list-content relative lg:py-[5.625rem] flex lg:block -mx-2 lg:mx-auto flex-wrap">
+          <div class="item-project w-full md:w-1/2 px-2 lg:px-0 mt-4 lg:mt-0 wow fadeInUp">
+            <div class="content bg-[#606060] xl:p-8 p-4">
+              <div class="project-head flex">
+                <div class="logo sm:w-[8.563rem] w-[5rem] shrink-0">
+                  <div class="c-img pt-[62%]">
+                    <img src="theme/frontend/images/img-project.png" alt="">
+                  </div>
+                </div>
+                <a href="#" title="" class="title flex-1 2xl:ml-10 ml-4 f-pop font-medium text-white 2xl:text-[1.875rem] lg:text-[1.5rem] text-[1.25rem]">
+                  Hosted VoIP Phone Service
+                </a>
+              </div>
+              <p class="desc font-medium text-[rgba(255,255,255,.8)] 2xl:text-[1.5rem] 2xl:mt-10 mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="item-project w-full md:w-1/2 px-2 lg:px-0 mt-4 lg:mt-0 wow fadeInUp">
+            <div class="content bg-[#606060] xl:p-8 p-4">
+              <div class="project-head flex">
+                <div class="logo sm:w-[8.563rem] w-[5rem] shrink-0">
+                  <div class="c-img pt-[62%]">
+                    <img src="theme/frontend/images/img-project.png" alt="">
+                  </div>
+                </div>
+                <a href="#" title="" class="title flex-1 2xl:ml-10 ml-4 f-pop font-medium text-white 2xl:text-[1.875rem] lg:text-[1.5rem] text-[1.25rem]">
+                  Hosted VoIP Phone Service
+                </a>
+              </div>
+              <p class="desc font-medium text-[rgba(255,255,255,.8)] 2xl:text-[1.5rem] 2xl:mt-10 mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="item-project w-full md:w-1/2 px-2 lg:px-0 mt-4 lg:mt-0 wow fadeInUp">
+            <div class="content bg-[#606060] xl:p-8 p-4">
+              <div class="project-head flex">
+                <div class="logo sm:w-[8.563rem] w-[5rem] shrink-0">
+                  <div class="c-img pt-[62%]">
+                    <img src="theme/frontend/images/img-project.png" alt="">
+                  </div>
+                </div>
+                <a href="#" title="" class="title flex-1 2xl:ml-10 ml-4 f-pop font-medium text-white 2xl:text-[1.875rem] lg:text-[1.5rem] text-[1.25rem]">
+                  Hosted VoIP Phone Service
+                </a>
+              </div>
+              <p class="desc font-medium text-[rgba(255,255,255,.8)] 2xl:text-[1.5rem] 2xl:mt-10 mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="item-project w-full md:w-1/2 px-2 lg:px-0 mt-4 lg:mt-0 wow fadeInUp">
+            <div class="content bg-[#606060] xl:p-8 p-4">
+              <div class="project-head flex">
+                <div class="logo sm:w-[8.563rem] w-[5rem] shrink-0">
+                  <div class="c-img pt-[62%]">
+                    <img src="theme/frontend/images/img-project.png" alt="">
+                  </div>
+                </div>
+                <a href="#" title="" class="title flex-1 2xl:ml-10 ml-4 f-pop font-medium text-white 2xl:text-[1.875rem] lg:text-[1.5rem] text-[1.25rem]">
+                  Hosted VoIP Phone Service
+                </a>
+              </div>
+              <p class="desc font-medium text-[rgba(255,255,255,.8)] 2xl:text-[1.5rem] 2xl:mt-10 mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="end w-[9.563rem] h-[9.563rem] mx-auto img-full img-h-full img-contain hidden lg:block wow fadeInUp">
+          <img src="theme/frontend/images/arrow-top.png" class="relative" alt="">
+        </div>
+      </div>
+    </div>
+    <span class="hidden lg:inline-block absolute top-12 right-0">
+      <img src="theme/frontend/images/circle-tr.png" alt="">
+    </span>
+  </section>
+  <section class="section-contact-form relative 2xl:py-[11.875rem] lg:py-[9rem] py-20 bg-no-repeat bg-cover" style="background-image: url(theme/frontend/images/bg-contact.jpg);">
+    <div class="container">
+      <div class="flex flex-wrap -mx-2">
+        <div class="w-full lg:w-1/2 px-2 wow fadeInLeft">
+          <p class="subtitle font-semibold text-[#00CCFF] 2xl:text-[1.875rem] lg:text-[1.5rem] text-[1rem]">About Us</p>
+          <h2 class="title text-white font-semibold mt-5 2xl:text-[3.5rem] lg:text-[2.5rem] text-[1.875rem]">Have a Question? We've Got Answers</h2>
+        </div>
+        <div class="w-full lg:w-1/2 px-2 lg:pl-16 wow fadeInRight">
+          <div class="short_content text-white font-medium 2xl:text-[1.5rem]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, reiciendis totam ratione, aliquam accusamus voluptates provident quia fuga, necessitatibus adipisci neque. Esse minima ea laborum sint libero perspiciatis sunt ad.
+          </div>
+          <a href="#" title="Contact Us" class="btn btn-primary lg:mt-20 mt-8">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <span class="hidden lg:inline-block absolute bottom-0 right-0">
+      <img src="theme/frontend/images/circle_br.png" alt="">
+    </span>
+  </section>
+  <footer class="footer relative">
+    <span class="hidden lg:inline-block absolute top-0 right-0">
+      <img src="theme/frontend/images/circle_tr.png" alt="">
+    </span>
+    <div class="footer-main 2xl:pt-[4.625rem] 2xl:pb-[6.063rem] lg:py-10 py-8 bg-[#2A2A2A]">
+      <div class="container">
+        <div class="flex flex-wrap 2xl:-mx-9 lg:-mx-4 -mx-2">
+          <div class="lg:w-[60%] 2xl:px-9 lg:px-4 px-2">
+            <div class="lg:flex flex-wrap">
+              <a href="#" title="" class="logo-footer block max-w-[13.563rem] shrink-0 mx-auto lg:ml-0">
+                <img src="theme/frontend/images/logo-footer.png" alt="">
+              </a>
+              <p class="footer-desc flex-1 lg:ml-6 text-white opacity-80 font-medium 2xl:text-[25px] text-center lg:text-left mt-4 lg:mt-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+              </p>
+            </div>
+            <div class="quicklink 2xl:mt-10 sm:mt-8 mt-4 hidden sm:block">
+              <p class="title-footer text-white f-pop font-medium 2xl-[text-1.875rem] lg:text-[1.5rem] text-[1.25rem]">Quicklinks</p>
+              <nav class="menu-quicklink mt-8">
+                <ul>
+                  <li><a href="" class="active">Home</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">Testimonials</a></li>
+                  <li><a href="">Projects/Portfolio</a></li>
+                </ul>
+              </nav>
+              <form action="" method="" class="form-footer mt-8 flex">
+                <input type="text" name="" placeholder="Enter Your E-mail Address" class="form-control f-pop font-medium bg-transparent flex-1 py-3 px-6 rounded-xl border border-[rgba(210,210,210,.8)] text-[rgba(210,210,210,.8)]">
+                <button class="btn-submit font-medium 2xl:text-[1.375rem] py-3 px-6 rounded-xl border border-[rgba(210,210,210,.8)] text-[rgba(210,210,210,.8)] ml-2 shrink-0 lg:hover:bg-[#00ccff] lg:hover:text-white lg:hover:border-[#00ccff] sm:min-w-[11.25rem]">Send</button>
+              </form>
+            </div>
+          </div>
+          <div class="w-full sm:w-1/2 mt-4 lg:w-[20%] 2xl:px-9 lg:px-4 px-2">
+            <p class="title-footer text-white f-pop font-medium 2xl-[text-1.875rem] lg:text-[1.5rem] text-[1.25rem]">Terms of Service</p>
+            <nav class="menu-foorer mt-4">
+              <ul>
+                <li><a href="">Lorem ipsum</a></li>
+                <li><a href="">Lorem ipsum</a></li>
+                <li><a href="">Lorem ipsum</a></li>
+                <li><a href="">Lorem ipsum</a></li>
+                <li><a href="">Lorem ipsum</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="w-full sm:w-1/2 mt-4 lg:w-[20%] 2xl:px-9 lg:px-4 px-2">
+            <p class="title-footer text-white f-pop font-medium 2xl-[text-1.875rem] lg:text-[1.5rem] text-[1.25rem]">Contact Us</p>
+            <p class="footer-contact flex items-center mt-4">
+              <img src="theme/frontend/images/hotline.svg" class="shrink-0 mr-4" alt="">
+              <a href="tel:19005678" class="hotline text-[rgba(255,255,255,.8)] font-meidum 2xl:text-[1.25rem]">19005678</a>
+            </p>
+            <p class="footer-contact flex items-center mt-4">
+              <img src="theme/frontend/images/ico_email.png" class="shrink-0 mr-4" alt="">
+              <a href="mailto:info@gmail.com" class="hotline text-[rgba(255,255,255,.8)] font-meidum 2xl:text-[1.25rem]">info@gmail.com</a>
+            </p>
+            <ul class="list-social flex items-center lg:mt-10 mt-4">
+              <li class="mr-5 last:mr-0">
+                <a href="" title="Facebook" target="_blank" class="text-[1.25rem] text-white"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li class="mr-5 last:mr-0">
+                <a href="" title="Instagram" target="_blank" class="text-[1.25rem] text-white"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li class="mr-5 last:mr-0">
+                <a href="" title="Linkedin-in" target="_blank" class="text-[1.25rem] text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright bg-[#009DC5] lg:py-5 py-2">
+      <div class="container text-center font-medium 2xl:text-[1.25rem] text-white">2023 © Connectel Internet Voice Networks</div>
+    </div>
+  </footer>
+
+  <script src="theme/frontend/tech5s_js/tech5s_base.min.js" defer></script>
+
+  <script src="theme/frontend/tech5s_js/libraries/Tech.js" defer></script>
+
+  <script src="theme/frontend/tech5s_js/libraries/BackToTop.js" defer></script>
+
+  <script src="theme/frontend/js/wow.min.js" defer></script>
+
+  <script src="theme/frontend/js/fslightbox.js" defer></script>
+
+  <script src="theme/frontend/js/swiper-bundle.min.js" defer></script>
+
+
+  <script src="theme/frontend/js/slider.js" defer></script>
+
+  <script src="theme/frontend/js/script.js" defer></script>
+
+</body>
+
+
+
+</html>

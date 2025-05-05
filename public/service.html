@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Base</title>
+
+  <link href="theme/frontend/css/fontawesome-free-6.2.0-web/css/all.css" type="text/css" rel="stylesheet" />
+
+  <link href="theme/frontend/css/animate.min.css" type="text/css" rel="stylesheet" />
+
+  <link href="theme/frontend/css/swiper-bundle.min.css" type="text/css" rel="stylesheet" />
+
+  <link href="theme/frontend/css/lightbox.css" type="text/css" rel="stylesheet" />
+
+  <link href="./output.css" type="text/css" rel="stylesheet" />
+
+  <link href="theme/frontend/css/main.css" type="text/css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+
+          fontFamily: {
+
+            'Manrope': ['"Manrope"'],
+
+            'Poppins':['"Poppins"'],
+
+
+          },
+
+          screens: {
+
+          
+        "sm": "576px",
+
+        "md": "768px",
+
+        "lg": "1024px",
+
+        "xl": "1280px",
+
+        "2xl": "1534px",
+
+          },
+
+          container: {
+
+            center: true,
+
+          },
+
+
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="wrapper mx-auto 2xl:text-[16px] text-[14px] text-[#454545] leading-snug font-['Manrope',sans-serif] overflow-x-hidden bg-[#2A2A2A]">
+
+  <header class="header sticky top-0 left-0 w-full z-10 lg:fixed bg-[rgba(42,42,42,.77)] 2xl:py-5 py-3">
+    <div class="container flex items-center justify-between lg:justify-start">
+      <a href="#" title="" class="h-logo block max-w-[11rem] sm:max-w-[13.563rem]">
+        <img src="theme/frontend/images/logo-header.png" alt="">
+      </a>
+      <nav class="menu lg:flex-1 2xl:pr-14 lg:pl-4 lg:pr-10">
+        <a href="#" title="" class="logo-mobile block max-w-[13.563rem] mx-auto my-4 lg:hidden">
+          <img src="theme/frontend/images/logo-header.png" alt="">
+        </a>
+        <ul>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="">About</a>
+            <ul>
+              <li><a href="">Menu1</a></li>
+              <li><a href="">Menu1</a></li>
+
+            </ul>
+          </li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Testimonials</a></li>
+          <li><a href="">Projects/Portfolio</a></li>
+        </ul>
+      </nav>
+      <div class="over-lay block lg:hidden fixed top-0 right-[-100%] bg-[rgba(0,0,0,.7)] transition-all duration-500 w-full h-full"></div>
+      <button class="show-menu text-[20px] text-white lg:hidden block">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a href="#" title="Contact Us" class="btn btn-primary !hidden lg:!inline-flex">Contact Us</a>
+    </div>
+  </header>
+  <section class="section-banner-page py-20 lg:pt-[17.625rem] bg-no-repeat bg-cover" style="background-image: url(theme/frontend/images/bg-service-page.jpg);">
+    <div class="container">
+        <div class="content lg:w-1/2 ml-auto mr-0">
+            <h1 class="title font-semibold text-white 2xl:text-[5rem] lg:text-[3.5rem] text-[2.5rem]">Services</h1>
+            <p class="desc text-white 2xl:text-[1.5rem] lg:mt-[1.875rem] mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+  </section>
+  <section class="section-about-service relative py-6 2xl:pt-[7.5rem] lg:pt-[5rem]">
+    <div class="container"> 
+      <div class="flex flex-wrap 2xl:-mx-9 lg:-mx-4 -mx-2">
+        <div class="w-full lg:w-1/2 2xl:px-9 lg:px-4 px-2 wow fadeInLeft">
+          <p class="subtitle font-semibold text-[#00CCFF] 2xl:text-[1.875rem] lg:text-[1.5rem] text-[1rem]">Our Services</p>
+          <h2 class="title text-white font-semibold mt-5 2xl:text-[3.5rem] lg:text-[2.5rem] text-[1.875rem]">Modernize your business</h2>
+          <div class="short_content text-[rgba(255,255,255,.8)] font-semibold 2xl:text-[1.5rem] lg:mt-[1.875rem] mt-5">
+            Simple! Your phone system runs on the internet! Of course, there's a lot that goes on in the cloud that you never see. That's the beauty of Cloud-Hosted Phone Service, you don't buy a system, software, licenses, etc., all of that is included in your low monthly service fee! Not only will you vastly increase your organizations communications abilities, you will probably do so at substantial monthly savings compared to your current service. And of course, you can keep your phone number!
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 2xl:px-9 lg:px-4 px-2 mt-4 lg:mt-0 wow fadeInRight">
+          <div class="image img_full">
+            <img src="theme/frontend/images/img-about.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="hidden lg:inline-block absolute top-0 right-0">
+      <img src="theme/frontend/images/circle_tr.png" alt="">
+    </span>
+  </section>
+  <section class="section-content relative 2xl:py-[7.5rem] lg:py-[5rem] py-6 bg-none bg-cover" style="background-image: url(theme/frontend/images/bg-content-service.jpg);">
+    <div class="container">
+        <h2 class="title f-pop text-center font-semibold text-white 2xl:text-[2.75rem] lg:text-[1.875rem] text-[1.5rem] wow fadeInUp">
+            Choose from the latest in technology from Polycom. The VVX series of touch screen phones!
+        </h2>
+      <div class="s-content font-semibold text-white 2xl:text-[1.5rem] text-center mt-[1.875rem] wow fadeInUp" data-wow-delay=".2s">
+        The Polycom VVX 600 IP phone is a true powerhouse, redefining what an IP desk phone can be. Think of it as the Ferrari of the phone world, This phone is ideal for busy professionals who juggle multiple calls and demand the best in responsiveness and call handling. Executives, senior managers, multitasking masters, and even receptionists managing high call volumes will all appreciate the VVX 600's capabilities.
+      </div>
+    </div>
+    <span class="hidden lg:inline-block absolute bottom-0 left-0">
+      <img src="theme/frontend/images/circle_bl.png" alt="">
+    </span>
+  </section>
+  <section class="section-service-content relative py-6 2xl:py-[7.5rem] lg:py-20">
+    <div class="container">
+        <div class="module-service flex flex-wrap lg:odd:flex-row-reverse lg:-mx-6 -mx-2 2xl:mt-[7.5rem] lg:mt-20 mt-6 first:mt-0">
+          <div class="w-full lg:w-1/2 px-2 lg:px-6 ">
+            <div class="image img-full">
+              <img src="theme/frontend/images/img-service.jpg" alt="">
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 px-2 lg:px-6 mt-4 lg:mt-0">
+            <p class="title f-pop font-medium 2xl:text-[2.5rem] lg:text-[1.875rem] text-[1.25rem] text-white">
+               Why Should You Do Business with 8x8?
+            </p>
+            <div class="short_content font-medium text-[rgba(255,255,255,.8)] 2xl:text-[1.5rem] lg:mt-[1.875rem] mt-4">
+               Forget unreliable connections holding your business back. We're the go-to provider for VoIP phone services that empower your team to connect. We've dedicated ourselves to crafting powerful, user-friendly products that just plain work better.
+               Imagine blazing-fast calls, crystal-clear audio, and features that make communication a breeze. And the best part? Our outrageously affordable solutions won't break the bank.
+                Upgrade your connections, boost your productivity, and see the difference reliable communication makes. Let's unlock the full potential of your business, together.
+            </div>
+             <a href="#" title="Learn More" class="btn btn-primary 2xl:mt-12 lg:mt-10 mt-4">Learn More</a>
+          </div>
+        </div>
+        <div class="module-service flex flex-wrap lg:odd:flex-row-reverse lg:-mx-6 -mx-2 2xl:mt-[7.5rem] lg:mt-20 mt-6 first:mt-0">
+          <div class="w-full lg:w-1/2 px-2 lg:px-6 ">
+            <div class="image img-full">
+              <img src="theme/frontend/images/img-service.jpg" alt="">
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 px-2 lg:px-6 mt-4 lg:mt-0">
+            <p class="title f-pop font-medium 2xl:text-[2.5rem] lg:text-[1.875rem] text-[1.25rem] text-white">
+               Why Should You Do Business with 8x8?
+            </p>
+            <div class="short_content font-medium text-[rgba(255,255,255,.8)] 2xl:text-[1.5rem] lg:mt-[1.875rem] mt-4">
+               Forget unreliable connections holding your business back. We're the go-to provider for VoIP phone services that empower your team to connect. We've dedicated ourselves to crafting powerful, user-friendly products that just plain work better.
+               Imagine blazing-fast calls, crystal-clear audio, and features that make communication a breeze. And the best part? Our outrageously affordable solutions won't break the bank.
+                Upgrade your connections, boost your productivity, and see the difference reliable communication makes. Let's unlock the full potential of your business, together.
+            </div>
+             <a href="#" title="Learn More" class="btn btn-primary 2xl:mt-12 lg:mt-10 mt-4">Learn More</a>
+          </div>
+        </div>
+        <div class="module-service flex flex-wrap lg:odd:flex-row-reverse lg:-mx-6 -mx-2 2xl:mt-[7.5rem] lg:mt-20 mt-6 first:mt-0">
+          <div class="w-full lg:w-1/2 px-2 lg:px-6 ">
+            <div class="image img-full">
+              <img src="theme/frontend/images/img-service.jpg" alt="">
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 px-2 lg:px-6 mt-4 lg:mt-0">
+            <p class="title f-pop font-medium 2xl:text-[2.5rem] lg:text-[1.875rem] text-[1.25rem] text-white">
+               Why Should You Do Business with 8x8?
+            </p>
+            <div class="short_content font-medium text-[rgba(255,255,255,.8)] 2xl:text-[1.5rem] lg:mt-[1.875rem] mt-4">
+               Forget unreliable connections holding your business back. We're the go-to provider for VoIP phone services that empower your team to connect. We've dedicated ourselves to crafting powerful, user-friendly products that just plain work better.
+               Imagine blazing-fast calls, crystal-clear audio, and features that make communication a breeze. And the best part? Our outrageously affordable solutions won't break the bank.
+                Upgrade your connections, boost your productivity, and see the difference reliable communication makes. Let's unlock the full potential of your business, together.
+            </div>
+             <a href="#" title="Learn More" class="btn btn-primary 2xl:mt-12 lg:mt-10 mt-4">Learn More</a>
+          </div>
+        </div>
+        <div class="module-service flex flex-wrap lg:odd:flex-row-reverse lg:-mx-6 -mx-2 2xl:mt-[7.5rem] lg:mt-20 mt-6 first:mt-0">
+          <div class="w-full lg:w-1/2 px-2 lg:px-6 ">
+            <div class="image img-full">
+              <img src="theme/frontend/images/img-service.jpg" alt="">
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 px-2 lg:px-6 mt-4 lg:mt-0">
+            <p class="title f-pop font-medium 2xl:text-[2.5rem] lg:text-[1.875rem] text-[1.25rem] text-white">
+               Why Should You Do Business with 8x8?
+            </p>
+            <div class="short_content font-medium text-[rgba(255,255,255,.8)] 2xl:text-[1.5rem] lg:mt-[1.875rem] mt-4">
+               Forget unreliable connections holding your business back. We're the go-to provider for VoIP phone services that empower your team to connect. We've dedicated ourselves to crafting powerful, user-friendly products that just plain work better.
+               Imagine blazing-fast calls, crystal-clear audio, and features that make communication a breeze. And the best part? Our outrageously affordable solutions won't break the bank.
+                Upgrade your connections, boost your productivity, and see the difference reliable communication makes. Let's unlock the full potential of your business, together.
+            </div>
+             <a href="#" title="Learn More" class="btn btn-primary 2xl:mt-12 lg:mt-10 mt-4">Learn More</a>
+          </div>
+        </div>
+    </div>
+    <span class="hidden lg:inline-block absolute top-0 left-0">
+      <img src="theme/frontend/images/circle-tl.png" alt="">
+    </span>
+  </section>
+  <section class="section-contact-form relative 2xl:py-[11.875rem] lg:py-[9rem] py-20 bg-no-repeat bg-cover" style="background-image: url(theme/frontend/images/bg-contact.jpg);">
+    <div class="container">
+      <div class="flex flex-wrap -mx-2">
+        <div class="w-full lg:w-1/2 px-2 wow fadeInLeft">
+          <p class="subtitle font-semibold text-[#00CCFF] 2xl:text-[1.875rem] lg:text-[1.5rem] text-[1rem]">About Us</p>
+          <h2 class="title text-white font-semibold mt-5 2xl:text-[3.5rem] lg:text-[2.5rem] text-[1.875rem]">Have a Question? We've Got Answers</h2>
+        </div>
+        <div class="w-full lg:w-1/2 px-2 lg:pl-16 wow fadeInRight">
+          <div class="short_content text-white font-medium 2xl:text-[1.5rem]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, reiciendis totam ratione, aliquam accusamus voluptates provident quia fuga, necessitatibus adipisci neque. Esse minima ea laborum sint libero perspiciatis sunt ad.
+          </div>
+          <a href="#" title="Contact Us" class="btn btn-primary lg:mt-20 mt-8">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <span class="hidden lg:inline-block absolute bottom-0 right-0">
+      <img src="theme/frontend/images/circle_br.png" alt="">
+    </span>
+  </section>
+  <footer class="footer relative">
+    <span class="hidden lg:inline-block absolute top-0 right-0">
+      <img src="theme/frontend/images/circle_tr.png" alt="">
+    </span>
+    <div class="footer-main 2xl:pt-[4.625rem] 2xl:pb-[6.063rem] lg:py-10 py-8 bg-[#2A2A2A]">
+      <div class="container">
+        <div class="flex flex-wrap 2xl:-mx-9 lg:-mx-4 -mx-2">
+          <div class="lg:w-[60%] 2xl:px-9 lg:px-4 px-2">
+            <div class="lg:flex flex-wrap">
+              <a href="#" title="" class="logo-footer block max-w-[13.563rem] shrink-0 mx-auto lg:ml-0">
+                <img src="theme/frontend/images/logo-footer.png" alt="">
+              </a>
+              <p class="footer-desc flex-1 lg:ml-6 text-white opacity-80 font-medium 2xl:text-[25px] text-center lg:text-left mt-4 lg:mt-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+              </p>
+            </div>
+            <div class="quicklink 2xl:mt-10 sm:mt-8 mt-4 hidden sm:block">
+              <p class="title-footer text-white f-pop font-medium 2xl-[text-1.875rem] lg:text-[1.5rem] text-[1.25rem]">Quicklinks</p>
+              <nav class="menu-quicklink mt-8">
+                <ul>
+                  <li><a href="" class="active">Home</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">Testimonials</a></li>
+                  <li><a href="">Projects/Portfolio</a></li>
+                </ul>
+              </nav>
+              <form action="" method="" class="form-footer mt-8 flex">
+                <input type="text" name="" placeholder="Enter Your E-mail Address" class="form-control f-pop font-medium bg-transparent flex-1 py-3 px-6 rounded-xl border border-[rgba(210,210,210,.8)] text-[rgba(210,210,210,.8)]">
+                <button class="btn-submit font-medium 2xl:text-[1.375rem] py-3 px-6 rounded-xl border border-[rgba(210,210,210,.8)] text-[rgba(210,210,210,.8)] ml-2 shrink-0 lg:hover:bg-[#00ccff] lg:hover:text-white lg:hover:border-[#00ccff] sm:min-w-[11.25rem]">Send</button>
+              </form>
+            </div>
+          </div>
+          <div class="w-full sm:w-1/2 mt-4 lg:w-[20%] 2xl:px-9 lg:px-4 px-2">
+            <p class="title-footer text-white f-pop font-medium 2xl-[text-1.875rem] lg:text-[1.5rem] text-[1.25rem]">Terms of Service</p>
+            <nav class="menu-foorer mt-4">
+              <ul>
+                <li><a href="">Lorem ipsum</a></li>
+                <li><a href="">Lorem ipsum</a></li>
+                <li><a href="">Lorem ipsum</a></li>
+                <li><a href="">Lorem ipsum</a></li>
+                <li><a href="">Lorem ipsum</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="w-full sm:w-1/2 mt-4 lg:w-[20%] 2xl:px-9 lg:px-4 px-2">
+            <p class="title-footer text-white f-pop font-medium 2xl-[text-1.875rem] lg:text-[1.5rem] text-[1.25rem]">Contact Us</p>
+            <p class="footer-contact flex items-center mt-4">
+              <img src="theme/frontend/images/hotline.svg" class="shrink-0 mr-4" alt="">
+              <a href="tel:19005678" class="hotline text-[rgba(255,255,255,.8)] font-meidum 2xl:text-[1.25rem]">19005678</a>
+            </p>
+            <p class="footer-contact flex items-center mt-4">
+              <img src="theme/frontend/images/ico_email.png" class="shrink-0 mr-4" alt="">
+              <a href="mailto:info@gmail.com" class="hotline text-[rgba(255,255,255,.8)] font-meidum 2xl:text-[1.25rem]">info@gmail.com</a>
+            </p>
+            <ul class="list-social flex items-center lg:mt-10 mt-4">
+              <li class="mr-5 last:mr-0">
+                <a href="" title="Facebook" target="_blank" class="text-[1.25rem] text-white"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li class="mr-5 last:mr-0">
+                <a href="" title="Instagram" target="_blank" class="text-[1.25rem] text-white"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li class="mr-5 last:mr-0">
+                <a href="" title="Linkedin-in" target="_blank" class="text-[1.25rem] text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright bg-[#009DC5] lg:py-5 py-2">
+      <div class="container text-center font-medium 2xl:text-[1.25rem] text-white">2023 © Connectel Internet Voice Networks</div>
+    </div>
+  </footer>
+
+  <script src="theme/frontend/tech5s_js/tech5s_base.min.js" defer></script>
+
+  <script src="theme/frontend/tech5s_js/libraries/Tech.js" defer></script>
+
+  <script src="theme/frontend/tech5s_js/libraries/BackToTop.js" defer></script>
+
+  <script src="theme/frontend/js/wow.min.js" defer></script>
+
+  <script src="theme/frontend/js/fslightbox.js" defer></script>
+
+  <script src="theme/frontend/js/swiper-bundle.min.js" defer></script>
+
+
+  <script src="theme/frontend/js/slider.js" defer></script>
+
+  <script src="theme/frontend/js/script.js" defer></script>
+
+</body>
+
+
+
+</html>
